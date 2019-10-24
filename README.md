@@ -12,7 +12,14 @@
 
 <br>
 
+* total sum of squares (TSS or SST)
+
+<img src="stats3.png" class="center">
+
+<br>
+
 
 <b>References:</b><br>
 <sub>https://en.wikipedia.org/wiki/Residual_sum_of_squares</sub><br>
 <sub>https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/lecture-and-recitation-notes/</sub><br>
+<sub>https://en.wikipedia.org/wiki/Total_sum_of_squares</sub><br>
