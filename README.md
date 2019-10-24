@@ -14,7 +14,7 @@
 
 * total sum of squares (TSS or SST)
 
-<img src="stats3.png" class="center">
+<img src="stats3.png" class="center"> (of the baseline model)
 
 <br>
 
