@@ -38,12 +38,13 @@ R<sup>2</sup> is unitless and universally interpretable
 
 ![stats5](/stats5.png)
 
-* The objective is selecting the best models coefficients (the coefficients that minimize SSE)
+* the objective is selecting the best models coefficients (the coefficients that minimize SSE)
 
-* Adding more variables (features) can improve the model (this effect has a <i>cap</i> as more variables are added)
+* adding more variables (features) can improve the model (this effect has a <i>cap</i> as more variables are added)
 
-* Not all variables should be used since each new variable requires more data and potentially can lead to <i>overfitting</i>. There is a trade off for the model: overfitting leads the model to perform well (high R<sup>2</sup>) on data used to create the model but worse on unseen data (new data we're interested in predicting the dependent variable value) 
+* not all variables should be used since each new variable requires more data and potentially can lead to <i>overfitting</i>. There is a trade off for the model: overfitting leads the model to perform well (high R<sup>2</sup>) on data used to create the model but worse on unseen data (new data we're interested in predicting the dependent variable value) *This number adjusts the R-squared value
 
+* adjusted R<sup>2</sup> is used to account for the number of independent variables used relative to the number of data points. (Multiple) R<sup>2</sup> will always increase if you add more independent variables. But adjusted R<sup>2</sup> will decrease if you add an independent variable that doesn't help the model.
 
 
 <hr>
