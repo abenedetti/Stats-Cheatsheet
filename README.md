@@ -58,10 +58,19 @@ R<sup>2</sup> is unitless and universally interpretable
 
   + <i>p value</i>: gives a measure of how plausible it is that the coefficient is actually 0, given the data we used to build the model. The less plausible it is, or the smaller the probability number in this column, the less likely it is that our coefficient estimate is actually 0. We want independent variables with small values in this column. 
 
-The <i>p value</i> will be large if the absolute value of the <i>t value</i> is small, and vice versa. 
+  The <i>p value</i> will be large if the absolute value of the <i>t value</i> is small, and vice versa. 
 
-The `summary` of the `lm` function recaps it all in the level of <i>significance levels</i> (last column) 
+  The `summary` of the `lm` function recaps it all in the level of <i>significance levels</i> (last column) 
 
+* <i>multicollinearity</i> is a measure of the linear relationship between variables:
+  
+  + +1 means a perfect positive relationship
+  
+  + 0 means no linear relationship
+  
+  + -1 means a perfect negative relationship
+  
+  
 
 <hr>
 <b>References:</b><br>
