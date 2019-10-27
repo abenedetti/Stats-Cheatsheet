@@ -32,7 +32,7 @@ There is also an alternative framework known as "online learning" where one can 
 
 ![stats4](/imgs/stats4.png)
 
-R<sup>2</sup> captures value added from using a model
+R<sup>2</sup> captures value added from using a model (or a measure of how much of the variance in y is explained by the model)
 
   + R<sup>2</sup> = 0 means no improvement over baseline
   + R<sup>2</sup> = 1 means a perfect predictive model
