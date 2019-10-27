@@ -10,6 +10,10 @@
 
 ![stats2](/imgs/stats2.png)
 
+* Root Mean Square Error (RMSE) normalized by N (units of dependent variable)
+
+![stats7](/imgs/stats7.png)
+
 <br>
 
 * total sum of squares (TSS or SST)
@@ -83,3 +87,4 @@ R<sup>2</sup> is unitless and universally interpretable
 <sub>https://en.wikipedia.org/wiki/Residual_sum_of_squares</sub><br>
 <sub>https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/lecture-and-recitation-notes/</sub><br>
 <sub>https://en.wikipedia.org/wiki/Total_sum_of_squares</sub><br>
+<sub>https://en.wikipedia.org/wiki/Root-mean-square_deviation</sub><br>
