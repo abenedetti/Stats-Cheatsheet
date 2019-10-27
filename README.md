@@ -16,7 +16,13 @@
 
 ![stats3](/imgs/stats3.png)(of the baseline model)
 
-<br>
+*Question:* Why is the mean being computed on training data for SST and not on test data?
+
+*Answer:* (amar_jonath): The SST computes the sum of squared errors of our baseline model. This baseline model predicts the mean of the target variable in the TRAINING set and not the test set, which is unknown.
+
+The rationale behind that is that you don't have the information of the variable you are trying to predict in your test set while making your prediction, so it cannot be part of your baseline model at all - even if it's just the mean. This is the base behind offline learning.
+
+There is also an alternative framework known as "online learning" where one can indeed use the test data (or the average thereof) for prediction. Online learning is a rich and deep field under active research and, unfortunately, is beyond the scope of this class.
 
 * R<sup>2</sup>
 
