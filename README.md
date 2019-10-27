@@ -43,6 +43,7 @@ R<sup>2</sup> is unitless and universally interpretable
   + good models for easy problems will have R<sup>2</sup> near 1
   + good models for hard problems can still have R<sup>2</sup> near 0
 
+R<sup>2</sup> is also the square of the correlation between the actual and predicted outcomes
 
 ### 2) Multiple linear regression model
 
