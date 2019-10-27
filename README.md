@@ -56,6 +56,11 @@ R<sup>2</sup> is unitless and universally interpretable
 
 * adjusted R<sup>2</sup> is used to account for the number of independent variables used relative to the number of data points. (Multiple) R<sup>2</sup> will always increase if you add more independent variables. But adjusted R<sup>2</sup> will decrease if you add an independent variable that doesn't help the model.
 
+* the in-sample (training set) R<sup>2</sup> will improve as the model includes more independent variables, but not necessarily the out of sample (test set) R<sup>2</sup>
+
+* R<sup>2</sup> is negative when the model fits the data worse than the horizontal line (the baseline model).
+
+
 ![stats6](/imgs/stats6.png)
 
 * in the `summary` of the `lm` function in `R` there is information to help understand if a variable should be included in the model:
