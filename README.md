@@ -88,7 +88,7 @@ R<sup>2</sup> is also the square of the correlation between the actual and predi
   
 ### 3) Logistic regression
 
-![stats7](/imgs/stats7.png)
+![stats10](/imgs/stats10.png)
 
 * linear regression would predict a continuous outcome. With *logistic regression* we extend the idea of linear regression to situations where the outcome variable (dependent) is categorical
 
