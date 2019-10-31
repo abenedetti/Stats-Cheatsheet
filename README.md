@@ -86,7 +86,29 @@ R<sup>2</sup> is also the square of the correlation between the actual and predi
   
   + -1 means a perfect negative relationship
   
+### 3) Logistic regression
+
+![stats7](/imgs/stats7.png)
+
+* linear regression would predict a continuous outcome. With *logistic regression* we extend the idea of linear regression to situations where the outcome variable (dependent) is categorical
+
+* we use the *logistic response function* which is a non linear regression equation to produce number between 0 and 1
+
+* we can instead talk about *Odds* (like in gambling)
+
+![stats8](/imgs/stats8.png)
+
+  + Odds > 1 if y = 1 is more likely
   
+  + Odds < 1 if y = 0 is more likely
+
+* we define the *Logit* as follow [the bigger the Logit is, the bigger P(y = 1)]
+
+![stats9](/imgs/stats9.png)
+
+
+
+
 
 <hr>
 <b>References:</b><br>
