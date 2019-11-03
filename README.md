@@ -86,6 +86,11 @@ R<sup>2</sup> is also the square of the correlation between the actual and predi
   
   + -1 means a perfect negative relationship
   
+  it occurs when the various independent variables are correlated, and this might confuse the coefficients (the betas) in the model
+  
+  multicollinearity is checked against excessively high values and signs (if intuition suggest a different sign you have to check)
+  
+  
 ### 3) Logistic regression
 
 ![stats10](/imgs/stats10.png)
@@ -137,6 +142,14 @@ R<sup>2</sup> is also the square of the correlation between the actual and predi
     + cost of raising false alarms
 
 ![stats12](/imgs/stats12.png)
+
+* Area under the curve (AUC) show an absolute measure of quality of prediction (it's the perecentage of time that our model will do a correct classification)
+
+![stats13](/imgs/stats13.png)
+
+* full confusion matrix and metrics
+
+![stats14](/imgs/stats14.png)
 
 <hr>
 <b>References:</b><br>
