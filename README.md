@@ -94,21 +94,33 @@ R<sup>2</sup> is also the square of the correlation between the actual and predi
 
 * we use the *logistic response function* which is a non linear regression equation to produce number between 0 and 1
 
-* we can instead talk about *Odds* (like in gambling)
+  + we can instead talk about *Odds* (like in gambling)
 
-![stats8](/imgs/stats8.png)
-
-  + Odds > 1 if y = 1 is more likely
+    Odds > 1 if y = 1 is more likely
   
-  + Odds < 1 if y = 0 is more likely
+    Odds < 1 if y = 0 is more likely
+    
+    ![stats8](/imgs/stats8.png)
 
-* we define the *Logit* as follow [the bigger the Logit is, the bigger P(y = 1)]
+  + we define the *Logit* as follow [the bigger the Logit is, the bigger P(y = 1)]
 
 ![stats9](/imgs/stats9.png)
 
+* the outcome of a logistic regression model is a probability, so to make a binary prediction we're using a *threshold value t*:
 
+  + P(y = 1) >= t predicts a binary prediction 0
+  
+  + P(y = 1) < t predicts a binary prediction 1
+  
+  the t value is generally based on the *better* errors. With no preferences between errors we select t=0.5 or the more likely outcome
+  
+* classification (confusion) matrix is used to compare actual vs predicted outcomes
 
+  + a model with a higher threshold will have a lower sensitivity and a higher specificity.
+  
+  + a model with a lower threshold will have a higher sensitivity and a lower specificity.
 
+![stats11](/imgs/stats11.png)
 
 <hr>
 <b>References:</b><br>
