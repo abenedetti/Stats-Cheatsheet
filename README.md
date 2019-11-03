@@ -125,6 +125,19 @@ R<sup>2</sup> is also the square of the correlation between the actual and predi
 
 ![stats11](/imgs/stats11.png)
 
+* Receiver Operator Characteristic curve or ROC curve can help picking which value of the threshold is best
+
+  it captures all thresholds simultaneously:
+  
+  + high treshold (high specificity / low sensitivity)
+  + low treshold (low specificity / high sensitivity)
+
+  generally we choose the best threshold for best trade off based on:
+    + the cost of failing to detect positives
+    + cost of raising false alarms
+
+![stats12](/imgs/stats12.png)
+
 <hr>
 <b>References:</b><br>
 <sub>https://en.wikipedia.org/wiki/Residual_sum_of_squares</sub><br>
