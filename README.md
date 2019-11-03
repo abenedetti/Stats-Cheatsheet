@@ -120,6 +120,9 @@ R<sup>2</sup> is also the square of the correlation between the actual and predi
   
   + a model with a lower threshold will have a higher sensitivity and a lower specificity.
 
+  <sub>Sensitivity = Recall or True positive rate</sub><br>
+  <sub>Specificity = True negative rate)</sub>
+
 ![stats11](/imgs/stats11.png)
 
 <hr>
