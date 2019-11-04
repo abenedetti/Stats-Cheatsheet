@@ -114,6 +114,13 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 ![stats9](/imgs/stats9.png)
 
+
+  + if we have a coefficient *c* for a variable, then that means
+  
+    + the *log odds (or Logit)* are increased by *c* for a unit increase in the variable
+
+    + the *odds* are multiplied by *e^c* for a unit increase in the variable
+
 * the outcome of a logistic regression model is a probability, so to make a binary prediction we're using a *threshold value t*:
 
   + P(y = 1) >= t predicts a binary prediction 0
