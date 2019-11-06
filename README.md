@@ -161,6 +161,18 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 ![stats14](/imgs/stats14.png)
 
+### 4) Classification and regression trees (CART)
+
+* when there's the need of an interpretable model with which you can easily understand the importance of factors/coefficients and make a new prediction at ease, CART are preferred Vs logistic regression
+
+* CART let you:
+  + build a tree by splitting on variables
+  + predict the outcome of a new observation by following the splits
+  + have an interpretabel model that does not assume to be linear
+
+![stats15](/imgs/stats15.png)
+
+
 <hr>
 <b>References:</b><br>
 <sub>https://en.wikipedia.org/wiki/Residual_sum_of_squares</sub><br>
