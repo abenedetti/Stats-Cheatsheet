@@ -172,6 +172,18 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 ![stats15](/imgs/stats15.png)
 
+* deciding the number of splits is important. For instance by setting a minimum number of points in each subset (`minbucket` parameter in R):
+  + if it is too small (more splits) there will be overfitting
+  + if it is too large, model will be too simple and not accurate
+  
+* each bucket will generally have both outcomes, to obtain the prediction for that bucket we may:
+  + count the outcomes and assign the bucket outcome at majority
+  + compute the percentage of data and, like in logistic regression, threshold to obtain a prediction
+  
+  By varying the threshold we can also plot an ROC curve:
+  
+  ![stats16](/imgs/stats16.png)
+  
 
 <hr>
 <b>References:</b><br>
