@@ -192,6 +192,29 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 * to build such a number of tree the sample of data is *bagged* or *boostrapped*, in other terms we select observations at random with replacement
 
+### 6) Cross validation Random forests
+
+* when using CART model the value of the parameter `minbucket` can affect the model's out-of-sample accuracy (third bullet of point 4)
+
+  selecting the optimal value by using the one that gives the best testing set accuracy however is not correct. The test set should be used to test our model on new, unseen data, if we use it to select the parameter we implicity build a "tailored" model
+
+* the methodology used is *K-fold cross validation*:
+
+  + we start by splitting the training set into *k* pieces or *folds*
+  + we then use *k-1* folds to create a model
+    we test the model on the remaining one fold (called the *validation set*) for each canditate value of the parameter
+  + we repeat for each of the *k* folds
+  + for each fold and for each canditate parameter value we can calculate the accuracy of the model by averaging the accuracies of the folds
+  + the accuracy is generally low on the borders: at the left because of the overfitting, at the right because of the model's semplicity
+  
+![stats17](/imgs/stats17.png)
+
+![stats18](/imgs/stats18.png)
+
+  when using cross validation in R we use the *complexity parameter* or *cp*. In analogy with R<sup>2</sup> and AIC it is a measure of the trade-off between model complexity and accuracy on the training set (smaller *cp* leads to a bigger tree that might overfit)
+
+
+
 
 
 <hr>
