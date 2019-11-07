@@ -184,6 +184,15 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
   
   ![stats16](/imgs/stats16.png)
   
+### 5) Random forests
+
+* in order to try to improve the accuracy of CART, at the cost of having a less interpretable model, we create a large number of CART trees called random forest
+
+* the prediction for a new observation is made by a vote on each tree, the outcome with the highest number of votes is the final outcome
+
+* to build such a number of tree the sample of data is *bagged* or *boostrapped*, in other terms we select observations at random with replacement
+
+
 
 <hr>
 <b>References:</b><br>
