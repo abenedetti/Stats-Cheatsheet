@@ -192,7 +192,7 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 * to build such a number of tree the sample of data is *bagged* or *boostrapped*, in other terms we select observations at random with replacement
 
-### 6) Cross validation Random forests
+### 6) Cross validation
 
 * when using CART model the value of the parameter `minbucket` can affect the model's out-of-sample accuracy (third bullet of point 4)
 
