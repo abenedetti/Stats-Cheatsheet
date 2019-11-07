@@ -168,7 +168,7 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 * CART let you:
   + build a tree by splitting on variables
   + predict the outcome of a new observation by following the splits
-  + have an interpretable model that does not assume to be linear (the model is *interpretable* as it shows, variable by variable, why the predictions are made)
+  + have an interpretable model that does not assume to be linear (the model is *interpretable* as it shows, variable by variable, why the predictions are made. It provides insights in understanding the logic for decision making)
 
 ![stats15](/imgs/stats15.png)
 
