@@ -114,6 +114,13 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 ![stats9](/imgs/stats9.png)
 
+
+  + if we have a coefficient *c* for a variable, then that means
+  
+    + the *log odds (or Logit)* are increased by *c* for a unit increase in the variable
+
+    + the *odds* are multiplied by *e^c* for a unit increase in the variable
+
 * the outcome of a logistic regression model is a probability, so to make a binary prediction we're using a *threshold value t*:
 
   + P(y = 1) >= t predicts a binary prediction 0
@@ -153,6 +160,75 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 * full confusion matrix and metrics
 
 ![stats14](/imgs/stats14.png)
+
+### 4) Classification and regression trees (CART)
+
+* when there's the need of an interpretable model with which you can easily understand the importance of factors/coefficients and make a new prediction at ease, CART are preferred Vs logistic regression
+
+* CART let you:
+  + build a tree by splitting on variables
+  + predict the outcome of a new observation by following the splits
+  + have an interpretable model that does not assume to be linear (the model is *interpretable* as it shows, variable by variable, why the predictions are made. It provides insights in understanding the logic for decision making)
+
+![stats15](/imgs/stats15.png)
+
+* deciding the number of splits is important. For instance by setting a minimum number of points in each subset (`minbucket` parameter in R):
+  + if it is too small (more splits) there will be overfitting
+  + if it is too large, model will be too simple and not accurate
+  
+* each bucket will generally have both outcomes, to obtain the prediction for that bucket we may:
+  + count the outcomes and assign the bucket outcome at majority
+  + compute the percentage of data and, like in logistic regression, threshold to obtain a prediction
+  
+  By varying the threshold we can also plot an ROC curve:
+  
+  ![stats16](/imgs/stats16.png)
+  
+### 5) Random forests
+
+* in order to try to improve the accuracy of CART, at the cost of having a less interpretable model, we create a large number of CART trees called random forest
+
+* the prediction for a new observation is made by a vote on each tree, the outcome with the highest number of votes is the final outcome
+
+* to build such a number of tree the sample of data is *bagged* or *boostrapped*, in other terms we select observations at random with replacement
+
+### 6) Cross validation
+
+* when using CART model the value of the parameter `minbucket` can affect the model's out-of-sample accuracy (third bullet of point 4)
+
+  selecting the optimal value by using the one that gives the best testing set accuracy however is not correct. The test set should be used to test our model on new, unseen data, if we use it to select the parameter we implicity build a "tailored" model
+
+* the methodology used is *K-fold cross validation*:
+
+  + we start by splitting the training set into *k* pieces or *folds*
+  + we then use *k-1* folds to create a model
+    we test the model on the remaining one fold (called the *validation set*) for each canditate value of the parameter
+  + we repeat for each of the *k* folds
+  + for each fold and for each canditate parameter value we can calculate the accuracy of the model by averaging the accuracies of the folds
+  + the accuracy is generally low on the borders: at the left because of the overfitting, at the right because of the model's semplicity
+  
+![stats17](/imgs/stats17.png)
+
+![stats18](/imgs/stats18.png)
+
+* when using cross validation in R we use the *complexity parameter* or *cp*. In analogy with R<sup>2</sup> and AIC it is a measure of  the trade-off between model complexity and accuracy on the training set (smaller *cp* leads to a bigger tree that might overfit)
+  
+  the goal is to minimize the RSS by making splits, but we want to penalize too many splits. Let S be the number of splits, and
+  λ (lambda) be our penalty, we shoudl find the tree that minimizes:
+
+![stats19](/imgs/stats19.png)
+
+  + picking a large value of λ means that we won’t make many splits (because we pay a big price for every additional split
+that outweighs the decrease in “error”)
+  + picking a small (or zero) value of λ, we’ll make splits until it no longer decreases error
+
+  *cp* for a tree with no splits – we simply take the average of the data, and the resulting RSS for that tree, let us
+  call it RSS(no splits) - we define:
+
+![stats20](/imgs/stats20.png)
+
+
+
 
 <hr>
 <b>References:</b><br>
