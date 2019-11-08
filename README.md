@@ -211,8 +211,21 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 ![stats18](/imgs/stats18.png)
 
-  when using cross validation in R we use the *complexity parameter* or *cp*. In analogy with R<sup>2</sup> and AIC it is a measure of  the trade-off between model complexity and accuracy on the training set (smaller *cp* leads to a bigger tree that might overfit)
+* when using cross validation in R we use the *complexity parameter* or *cp*. In analogy with R<sup>2</sup> and AIC it is a measure of  the trade-off between model complexity and accuracy on the training set (smaller *cp* leads to a bigger tree that might overfit)
+  
+  the goal is to minimize the RSS by making splits, but we want to penalize too many splits. Let S be the number of splits, and
+  λ (lambda) be our penalty, we shoudl find the tree that minimizes:
 
+![stats19](/imgs/stats19.png)
+
+  + picking a large value of λ means that we won’t make many splits (because we pay a big price for every additional split
+that outweighs the decrease in “error”)
+  + picking a small (or zero) value of λ, we’ll make splits until it no longer decreases error
+
+  *cp* for a tree with no splits – we simply take the average of the data, and the resulting RSS for that tree, let us
+  call it RSS(no splits) - we define:
+
+![stats20](/imgs/stats20.png)
 
 
 
