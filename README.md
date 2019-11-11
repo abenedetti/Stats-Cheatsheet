@@ -161,6 +161,9 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
 
 ![stats14](/imgs/stats14.png)
 
+To compute the accuracy of the baseline method on the test set, we first need to see which outcome value is more frequent in the training set (baseline) and then calculate it on the test set.
+
+
 ### 4) Classification and regression trees (CART)
 
 * when there's the need of an interpretable model with which you can easily understand the importance of factors/coefficients and make a new prediction at ease, CART are preferred Vs logistic regression
