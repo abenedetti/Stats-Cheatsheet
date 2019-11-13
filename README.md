@@ -230,6 +230,15 @@ that outweighs the decrease in “error”)
 
 ![stats20](/imgs/stats20.png)
 
+### 7) Natural language processing - Bag of Words
+
+* the *Bag of Words* is a simple approach used to make computers understand text: it operates by counting the number of times each words appears
+
+* in order to improve the performance, it's preferable to do some preprocessing steps:
+  + cleaning up irregularities: common operations are changing all words as lower case, clean the punctuation. In fact this should tailored to the specifica problem (punctuation may be useful in some situations)
+  + removing unhelpful terms: stop words that are unlikely to improve the prediction quality
+  + stemming: reconduct words of common stem to the same word (eg: argue, argued, arguing, argues -  there are several methods to perform stemming with pros & cons)
+  
 
 
 
