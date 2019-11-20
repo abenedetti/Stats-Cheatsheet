@@ -250,6 +250,39 @@ that outweighs the decrease in “error”)
   + Requires very little data to get started
   + Can be limited in scope (You're only recommending similar things to what the user has already liked)
   
+* Hybrid Filtering
+  + a combination of the two (example netflix)
+ 
+### 9) Clustering
+
+![clustering](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cluster-2.svg/200px-Cluster-2.svg.png)
+
+* it's a method to do unsupervised learning
+  + the goal is to segment the data into similar groups instead of prediction called clusters
+  + can also cluster data into “similar” groups and then build a predictive model for each group
+
+  *Attention!: Be careful not to overfit your model! This works best with large datasets*
+ 
+* for clustering algorithm we need to define the distance between two data points:
+  + Euclidean distance (squared root ot the squares of the points components)
+  + Manhattan distance (sum of absolute values instead of squares)
+  + maximum coordinate distance (consider measurement for which data points deviate the most)
+
+* and also between two clusters:
+  + minimum distance (distance between points that are the closest)
+  + maximum distance (distance between points that are the farthest)
+  + centroid distance (distance between centroids of clusters)<br>
+  <sub>centroid is point that has the average of all data points in each component</sub>
+
+* depending from the scale of variables it may be necessary to normalize first (done by subtracting the mean of the data and dividing by the standard deviation)
+  
+
+
+
+
+ 
+ 
+ 
 <hr>
 <b>References:</b><br>
 <sub>https://en.wikipedia.org/wiki/Residual_sum_of_squares</sub><br>
