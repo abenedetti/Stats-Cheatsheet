@@ -239,9 +239,17 @@ that outweighs the decrease in “error”)
   + removing unhelpful terms: stop words that are unlikely to improve the prediction quality
   + stemming: reconduct words of common stem to the same word (eg: argue, argued, arguing, argues -  there are several methods to perform stemming with pros & cons)
   
+### 8) Recommendations systems
 
+* Collaborative Filtering Systems
+  + Can accurately suggest complex items without understanding the nature of the items
+  + Requires a lot of data about the user to make accurate recommendations
+  + Millions of items – need lots of computing power
 
-
+* Content Filtering
+  + Requires very little data to get started
+  + Can be limited in scope (You're only recommending similar things to what the user has already liked)
+  
 <hr>
 <b>References:</b><br>
 <sub>https://en.wikipedia.org/wiki/Residual_sum_of_squares</sub><br>
