@@ -276,12 +276,12 @@ that outweighs the decrease in “error”)
 
 * depending from the scale of variables it may be necessary to normalize first (done by subtracting the mean of the data and dividing by the standard deviation)
   
-### 10) Hierchical clustering
+### 10) Hierarchical clustering
 
   + start with each data point in its own cluster
   + combine two nearest clusters (Euclidean, Centroid)
   
-  The Hierarchical clustering algorithm always starts with each data point in its own cluster, and ends with all data points in the same cluster.
+  The hierarchical clustering algorithm always starts with each data point in its own cluster, and ends with all data points in the same cluster.
 
 ![stats21](/imgs/stats21.png)
 
