@@ -276,15 +276,20 @@ that outweighs the decrease in “error”)
 
 * depending from the scale of variables it may be necessary to normalize first (done by subtracting the mean of the data and dividing by the standard deviation)
   
-* hierchical clustering
+### 10) Hierchical clustering
+
   + start with each data point in its own cluster
   + combine two nearest clusters (Euclidean, Centroid)
 
 ![stats21](/imgs/stats21.png)
 
+### 11) Cluster dendogram
+
   With the help of a dendogram we're able to decide how many cluster to use, based on their meaningfullness, which is established by analyzing some statitistics (mean, min, max, ...)
 
 ![stats22](/imgs/stats22.png)
+
+![stats23](/imgs/stats23.png)
  
 <hr>
 <b>References:</b><br>
