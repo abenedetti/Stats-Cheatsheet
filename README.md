@@ -280,6 +280,8 @@ that outweighs the decrease in “error”)
 
   + start with each data point in its own cluster
   + combine two nearest clusters (Euclidean, Centroid)
+  
+  The Hierarchical clustering algorithm always starts with each data point in its own cluster, and ends with all data points in the same cluster.
 
 ![stats21](/imgs/stats21.png)
 
