@@ -294,7 +294,15 @@ that outweighs the decrease in “error”)
 ![stats22](/imgs/stats22.png)
 
 ![stats23](/imgs/stats23.png)
- 
+
+
+### 12) k-Means clustering
+
+![stats24](/imgs/stats24.png)
+
+
+
+
 <hr>
 <b>References:</b><br>
 <sub>https://en.wikipedia.org/wiki/Residual_sum_of_squares</sub><br>
