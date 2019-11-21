@@ -195,6 +195,8 @@ To compute the accuracy of the baseline method on the test set, we first need to
 
 * to build such a number of tree the sample of data is *bagged* or *boostrapped*, in other terms we select observations at random with replacement
 
+* the Random Forest algorithm is known for its attractive property of detecting variable interactions
+
 ### 6) Cross validation
 
 * when using CART model the value of the parameter `minbucket` can affect the model's out-of-sample accuracy (third bullet of point 4)
