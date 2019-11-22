@@ -301,7 +301,9 @@ that outweighs the decrease in “error”)
 ![stats24](/imgs/stats24.png)
 
 
+### RECAP
 
+![stats25](/imgs/stats25.png)
 
 <hr>
 <b>References:</b><br>
