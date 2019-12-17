@@ -136,7 +136,7 @@ On the contrary, when we remove insignificant variables, the "Adjusted R-squred"
   + a model with a lower threshold will have a higher sensitivity and a lower specificity.
 
   <sub>Sensitivity = Recall or True positive rate</sub><br>
-  <sub>Specificity = True negative rate)</sub>
+  <sub>Specificity = True negative rate</sub>
 
 ![stats11](/imgs/stats11.png)
 
